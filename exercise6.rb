@@ -20,4 +20,13 @@ else
 	puts "You don't need to pick up bananas today"
 end
 
-list(grocery_list)
+#Step 5
+puts "Second item in the list:" + grocery_list[1]
+
+#Step 6
+new_list = grocery_list.sort
+
+#Step 7
+new_list.delete("salmon")
+
+list(new_list)

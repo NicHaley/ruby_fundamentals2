@@ -1,5 +1,11 @@
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
+grocery_list << "rice"
+puts "Total number of items: #{grocery_list.length}"
 
-grocery_list.each { |x|
-	puts "* #{x}"
-}
+def list(array)
+	array.each { |x|
+		puts "* #{x}"
+	}
+end
+
+list(grocery_list)
